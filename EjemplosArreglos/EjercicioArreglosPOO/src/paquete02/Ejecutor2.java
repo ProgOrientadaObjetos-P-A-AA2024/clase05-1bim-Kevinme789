@@ -15,7 +15,13 @@ public class Ejecutor2 {
         LibretaCalificacion libreta = new LibretaCalificacion(nombreEstudiante,
         notas);
         libreta.establecerPromedio();
+        // Si comentamos la linea 17 no estableceremos el promedio de las notas
+        // por lo tanto nos imprimara 0.00 al no haber establecido un valor
+        // al atributo promedio
         libreta.establecerPromedioCualitativo();
+        // Si comentamos la linea 20 no estableceremos el Promedio Cualitativo
+        // por lo tanto se imprimira como null al no haber establecido un valor
+        // al atributo promedioCualitativo.
         System.out.printf("%s", libreta);
                 
     }
