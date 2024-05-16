@@ -25,10 +25,11 @@ public class Ejemplo4 {
 
         for (int i = 0; i < calificaciones.length; i++) {
             Calificacion objetoCalificacion = calificaciones[i];
-            System.out.printf("%s - %.2f - Profesor(%s)\n",
+            System.out.printf("%s - %.2f - Profesor(%s-%s)\n",
                     objetoCalificacion.obtenerNombreMateria(),
                     objetoCalificacion.obtenerNota(),
-                    objetoCalificacion.obtenerProfesor().obtenerNombre());
+                    objetoCalificacion.obtenerProfesor().obtenerNombre(),
+                    objetoCalificacion.obtenerProfesor().obtenerTipo());
             // En la linea 31 nos esta retornando el atributo nombre de la 
             // clase profesor la cual procede a imprimir el valor que tenga en
             // el momento.
